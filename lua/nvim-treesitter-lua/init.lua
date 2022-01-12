@@ -28,8 +28,8 @@ function M.setup()
     local query_content = table.concat(vim.fn.readfile(query_file), "\n")
     vim.treesitter.set_query("lua", query_name, query_content)
   end
-end
 
-M.setup()
+  M._initialized = true
+end
 
 return M
