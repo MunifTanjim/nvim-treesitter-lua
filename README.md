@@ -1,6 +1,8 @@
 # nvim-treesitter-lua
 
-Lua parser for [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter).
+Tree-sitter Lua parser integration for [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter).
+
+Lua parser: [`MunifTanjim/tree-sitter-lua`](https://github.com/MunifTanjim/tree-sitter-lua).
 
 ## Installation
 
