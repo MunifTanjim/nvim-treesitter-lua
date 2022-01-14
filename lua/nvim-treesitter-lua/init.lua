@@ -61,8 +61,7 @@ function M.setup()
     install_info = {
       url = "https://github.com/MunifTanjim/tree-sitter-lua",
       files = { "src/parser.c", "src/scanner.c" },
-      location = "tree-sitter-lua/lua",
-      revision = "a5fc8b29c5c74fe016f4da71badb9476277b5146",
+      revision = "6197f42bf174b867a499e201e40515b9feef12af",
     },
     maintainers = { "@MunifTanjim" },
   }
