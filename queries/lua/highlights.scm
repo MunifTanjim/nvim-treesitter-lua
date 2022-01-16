@@ -144,6 +144,9 @@
 
 (vararg_expression) @constant
 
+((identifier) @constant
+ (#lua-match? @constant "^[A-Z][A-Z_0-9]*$"))
+
 ;; Tables
 
 (field name: (identifier) @field)
@@ -170,6 +173,15 @@
 
 (method_index_expression method: (identifier) @method)
 
+(function_call
+  (identifier) @function.builtin
+  (#any-of? @function.builtin
+    ;; built-in functions in Lua 5.1
+    "assert" "collectgarbage" "dofile" "error" "getfenv" "getmetatable" "ipairs"
+    "load" "loadfile" "loadstring" "module" "next" "pairs" "pcall" "print"
+    "rawequal" "rawget" "rawset" "require" "select" "setfenv" "setmetatable"
+    "tonumber" "tostring" "type" "unpack" "xpcall"))
+
 ;; Others
 
 (comment) @comment
@@ -179,3 +191,6 @@
 (number) @number
 
 (string) @string
+
+;; Error
+(ERROR) @error
