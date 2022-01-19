@@ -1,8 +1,16 @@
 # nvim-treesitter-lua
 
-Tree-sitter Lua parser integration for [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter).
-
 Lua parser: [`MunifTanjim/tree-sitter-lua`](https://github.com/MunifTanjim/tree-sitter-lua).
+
+_**This repository is now archived. Everything is merged into [`nvim-treesitter/nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter).**_
+
+<details>
+
+<summary>
+Archived Documentation
+</summary>
+
+Tree-sitter Lua parser integration for [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter).
 
 ## Installation
 
@@ -95,6 +103,7 @@ treesitter_lua.set_query("injections", [[
   (#match? @_nvim_exec "(^|\.)nvim_exec$"))
 ]], "append")
 ```
+</details>
 
 ## License
 
